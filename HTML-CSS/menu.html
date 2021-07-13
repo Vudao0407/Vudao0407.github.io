@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Rosa</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Scroll reveal CDN-->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-menu.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="./images/logo-rosa.png" alt="">
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <button  class="nav-link" id="link-contact" onclick="showContact()">Contact</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome to Menu
+            </h2>
+            <h1 class="headline">The Rosa</h1>
+            <div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <a href="#menu" class="btn cta-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+
+    <div id="menu" class="tab">
+		<div class="btn-box">
+			<button id="btn2" onclick="openBreakfast()"><img src="images/breakfast.png">&nbsp; Breakfast</button>
+			<button id="btn3" onclick="openLunch()"><img src="images/fast-food.png">&nbsp; Lunch</button>
+			<button id="btn4" onclick="openSnacks()"><img src="images/french-fries.png">&nbsp; Snacks</button>
+			<button id="btn5" onclick="openDinner()"><img src="images/roast-chicken.png">&nbsp; Dinner</button>
+		</div>
+		<div class="text">
+			 <h3>Select Your <span>Food</span>.</h3>
+		</div>
+
+        <div class="menu-container">
+            <div id="breakfast" class="content1">
+				<div class="row">
+					<div class="column">
+                        <img src="images/breakfast1.jpg">
+				        <img src="images/breakfast2.jpg">
+				    </div>
+				    <div class="column">
+				       <img src="images/breakfast3.jpg">
+				       <img src="images/breakfast4.jpg">
+				    </div>	
+				</div>
+				
+		    </div>
+        
+            <div id="lunch" class="content1">
+                
+                    <div class="row">
+                        <div class="column">
+                        <img src="images/lunch1.jpg">
+                        <img src="images/lunch2.jpg">
+                        </div>
+                        <div class="column">
+                        <img src="images/lunch3.jpg">
+                        <img src="images/lunch4.jpg">
+                        </div>	
+                    </div>
+            </div>
+
+            <div id="snacks" class="content1">
+                
+                    <div class="row">
+                        <div class="column">
+                        <img src="images/snacks1.jpg">
+                        <img src="images/snacks2.jpg">
+                        </div>
+                        <div class="column">
+                        <img src="images/snacks3.jpg">
+                        <img src="images/snacks4.jpg">
+                        </div>	
+                    </div>
+            </div>
+
+            <div id="dinner" class="content1">
+                
+                    <div class="row">
+                        <div class="column">
+                        <img src="images/dinner1.jpg">
+                        <img src="images/dinner2.jpg">
+                        </div>
+                        <div class="column">
+                        <img src="images/dinner3.jpg">
+                        <img src="images/dinner4.jpg">
+                        </div>	
+                    </div>
+	    	</div>
+        </div>
+
+
+	</div>
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animte-top">
+                    <h4>About Rosa</h4>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4>Follow along</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="your email address...">
+                            <button class="newsletter-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="contact-modal" id="contact">
+        <div class="over-lay"> </div>
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Location:</h3>
+                            <p>Eluru,WestGodavari,<br>534001</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Open Hours:</h3>
+                            <p>Sunday-Friday<br>11:00AM-23:00PM</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email:</h3>
+                            <p>info@Food.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Call:</h3>
+                            <p>+91 987-654-321</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="contactForm">
+                    <form>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+    
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+    
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message..</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="send">
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+     
+		
+	</div> 
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+        <!-- Tabs Script -->
+	
+
+</body>
+</html>
