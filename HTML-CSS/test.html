@@ -1,18 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./test.css">
+  <style>
+    /* Make the image fully responsive */
+.magintops{
+  margin-top: 3%;
+  animation: fadeIn linear 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes growth {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal-dialog-containner{
+  animation: growth linear 0.3s;
+}
+.btn-color{
+  background: #ff0157;
+}
+    </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="bar">
-            
-        </nav>
 
-
+  <div class="container mt-3">
+    <h2>Modal Example</h2>
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Open modal
+    </button>
+  
+    <!-- The Modal -->
+    <div class="modal fade magintops" id="myModal">
+      <div class="modal-dialog modal-dialog-containner ">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Contact Us</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="contact-container">
+              <div class="contactInfo">
+                <div class="box-item">
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                      <div class="text">
+                          <h5>Location:</h5>
+                          <p>12A,wasabi</p>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="icon">
+                          <i class="fa fa-clock" aria-hidden="true"></i>
+                      </div>
+                      <div class="text">
+                          <h5>Open:</h5>
+                          <p>Sun-Fri: 11:00AM-23:00PM</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="box-item box-item--left" >
+                  <div class="box box--right">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h5>Email:</h5>
+                        <p>info@Food.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h5>Call:</h5>
+                        <p>+91 987-654-321</p>
+                    </div>
+                </div>
+                </div>
+              </div>
+  
+              <div class="contactForm">
+                  <form>
+                      <div class="inputBox">
+                         <div class="inputBox-header">Full Name:</div>
+                          <input type="text" class="inputBox-input"  name="" required="required">
+                      </div>
+  
+                      <div class="inputBox">
+                          <div class="inputBox-header">Email:</div>
+                          <input type="text" class="inputBox-input" name="" required="required">
+                      </div>
+  
+                      <div class="inputBox">
+                        <div class="inputBox-header">Your Message:</div>
+                          <textarea class="inputBox-input"  required="required"></textarea>
+                      </div>
+                      <div class="inputBox inputBox-btn">
+                          <input type="submit" name="" value="send">
+                          
+                      </div>
+                  </form>
+              </div>
+          </div>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-color" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
     </div>
+    
+  </div>
 </body>
 </html>

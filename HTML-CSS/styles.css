@@ -380,6 +380,7 @@ footer {
   margin-bottom: 5.4rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .social-icons i {
   font-size: 2rem;
@@ -516,6 +517,9 @@ footer {
   .img-item {
     transition: transform 0.5s;
   }
+  .newsletter-input {
+    padding-right: 60px;
+  }
 }
 /* animation */
 
@@ -580,7 +584,7 @@ footer {
   }
 }
 
-.contact {
+/* .contact {
   position: relative;
   min-height: 100vh;
   padding: 50px 100px;
@@ -593,9 +597,9 @@ footer {
   border-spacing: 70px;
   box-shadow: 6px 6px 26px #b8b8b8, -6px -6px 26px #ffffff;
   /* display: none; */
-  /* animation: fadeIn linear 0.5s; */
-  /* animation: growth linear 0.2; */
-}
+/* animation: fadeIn linear 0.5s; */
+/* animation: growth linear 0.2; */
+/* }
 .contact .content {
   max-width: 800px;
   text-align: center;
@@ -700,4 +704,108 @@ footer {
 }
 .contactForm .inputBox input[type="submit"]:hover {
   letter-spacing: 6px;
+} */
+
+/* Modal */
+.box-item {
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  flex: 1;
+}
+.text h5 {
+  font-size: 2.2rem;
+}
+.box-item--left {
+  margin-top: 20px;
+}
+.modal-title {
+  margin-left: 16px;
+  font-size: 25px;
+}
+.inputBox {
+  display: flex;
+  margin-bottom: 25px;
+}
+.inputBox-btn {
+  justify-content: center;
+}
+.inputBox-input {
+  width: 100%;
+}
+.inputBox-header {
+  min-width: 130px;
+  color: #ff0157;
+  font-size: 15px;
+}
+.inputBox-header h4 {
+  margin-left: 16px;
+  font-size: 20px;
+}
+.inputBox-btn {
+  margin-top: 25px;
+}
+.contactForm .inputBox input[type="submit"] {
+  border: none;
+  background: #ff0157;
+  padding: 5px 18px;
+  border-radius: 19px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.contactForm .inputBox input[type="submit"]:hover {
+  letter-spacing: 6px;
+}
+.magintops {
+  margin-top: 6%;
+  animation: fadeIn linear 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes growth {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal-dialog-containner {
+  animation: growth linear 0.3s;
+}
+.btn-color {
+  background: #ff0157;
+}
+.modal-body {
+  padding: 25px;
+}
+form {
+  margin-top: 25px;
+}
+.icon {
+  max-width: 25px;
+  height: 25px;
+  background: #ff0157;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.icon i {
+  font-size: 20px;
+}
+.modal-footer button {
+  margin-right: 18px;
+  padding: 5px 16px;
+  font-size: 15px;
 }

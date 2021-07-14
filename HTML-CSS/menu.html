@@ -5,22 +5,35 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Rosa</title>
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!--Scroll reveal CDN-->
     
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
-
+    
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+        }
+        .container-banner{
+            /* min-height: 50px ; */
+            margin: 50px 10%;
+        }
+        </style>
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="style-menu.css">
 </head>
 <body>
@@ -42,7 +55,9 @@
                         <a href="menu.html" class="nav-link">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <button  class="nav-link" id="link-contact" onclick="showContact()">Contact</button>
+                        <a type="button" class="nav-link" data-toggle="modal" data-target="#myModal">
+                            Contact
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">About Us</a>
@@ -71,80 +86,68 @@
         </div>
     </section>
 
+    <!-- <section class="discover-our-story">
+        <div class="container">
+            <div class="restaurant-info">
+                <div class="restaurant-description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">D</span>iscover
+                        </h2>
+                        <h1 class="headline headline-dark">Our Story</h1>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quia quibusdam architecto inventore molestiae soluta asperiores, laudantium, necessitatibus dolorem repudiandae velit sint natus. Qui consectetur, saepe consequatur nostrum corrupti itaque.
+
+                    </p>
+                    <a href="#" class="btn body-btn">About Us</a>
+                </div>
+                <div class="restaurant-info-img animate-right">
+                    <img src="./images/our-story-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="container-banner" id="menu">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000" data-pause="hover">
+      
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/Webp.net-resizeimage (4).jpg" alt="Los Angeles" >
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Webp.net-resizeimage (5).jpg" alt="Chicago" >
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Webp.net-resizeimage (6).jpg" alt="New York">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      
+      </div>
  
 
 
-    <div id="menu" class="tab">
-		<div class="btn-box">
-			<button id="btn2" onclick="openBreakfast()"><img src="images/breakfast.png">&nbsp; Breakfast</button>
-			<button id="btn3" onclick="openLunch()"><img src="images/fast-food.png">&nbsp; Lunch</button>
-			<button id="btn4" onclick="openSnacks()"><img src="images/french-fries.png">&nbsp; Snacks</button>
-			<button id="btn5" onclick="openDinner()"><img src="images/roast-chicken.png">&nbsp; Dinner</button>
-		</div>
-		<div class="text">
-			 <h3>Select Your <span>Food</span>.</h3>
-		</div>
 
-        <div class="menu-container">
-            <div id="breakfast" class="content1">
-				<div class="row">
-					<div class="column">
-                        <img src="images/breakfast1.jpg">
-				        <img src="images/breakfast2.jpg">
-				    </div>
-				    <div class="column">
-				       <img src="images/breakfast3.jpg">
-				       <img src="images/breakfast4.jpg">
-				    </div>	
-				</div>
-				
-		    </div>
-        
-            <div id="lunch" class="content1">
-                
-                    <div class="row">
-                        <div class="column">
-                        <img src="images/lunch1.jpg">
-                        <img src="images/lunch2.jpg">
-                        </div>
-                        <div class="column">
-                        <img src="images/lunch3.jpg">
-                        <img src="images/lunch4.jpg">
-                        </div>	
-                    </div>
-            </div>
-
-            <div id="snacks" class="content1">
-                
-                    <div class="row">
-                        <div class="column">
-                        <img src="images/snacks1.jpg">
-                        <img src="images/snacks2.jpg">
-                        </div>
-                        <div class="column">
-                        <img src="images/snacks3.jpg">
-                        <img src="images/snacks4.jpg">
-                        </div>	
-                    </div>
-            </div>
-
-            <div id="dinner" class="content1">
-                
-                    <div class="row">
-                        <div class="column">
-                        <img src="images/dinner1.jpg">
-                        <img src="images/dinner2.jpg">
-                        </div>
-                        <div class="column">
-                        <img src="images/dinner3.jpg">
-                        <img src="images/dinner4.jpg">
-                        </div>	
-                    </div>
-	    	</div>
-        </div>
-
-
-	</div>
     <footer>
         <div class="container">
             <div class="back-to-top">
@@ -189,69 +192,94 @@
             </div>
         </div>
     </footer>
-    <div class="contact-modal" id="contact">
-        <div class="over-lay"> </div>
-            <div class="contact-container">
-                <h2>Contact Us</h2>
-                <div class="contactInfo">
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <div class="text">
-                            <h3>Location:</h3>
-                            <p>Eluru,WestGodavari,<br>534001</p>
-                        </div>
+
+    <div class="container mt-3">      
+        <!-- The Modal -->
+        <div class="modal fade magintops" id="myModal">
+          <div class="modal-dialog modal-dialog-containner ">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Contact Us</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="contact-container">
+                  <div class="contactInfo">
+                    <div class="box-item">
+                      <div class="box">
+                          <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                          <div class="text">
+                              <h5>Location:</h5>
+                              <p>12A,wasabi</p>
+                          </div>
+                      </div>
+                      <div class="box">
+                          <div class="icon">
+                              <i class="fa fa-clock" aria-hidden="true"></i>
+                          </div>
+                          <div class="text">
+                              <h5>Open:</h5>
+                              <p>Sun-Fri: 11:00AM-23:00PM</p>
+                          </div>
+                      </div>
                     </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        </div>
+                    <div class="box-item box-item--left" >
+                      <div class="box box--right">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                         <div class="text">
-                            <h3>Open Hours:</h3>
-                            <p>Sunday-Friday<br>11:00AM-23:00PM</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                        <div class="text">
-                            <h3>Email:</h3>
+                            <h5>Email:</h5>
                             <p>info@Food.</p>
                         </div>
                     </div>
                     <div class="box">
                         <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         <div class="text">
-                            <h3>Call:</h3>
+                            <h5>Call:</h5>
                             <p>+91 987-654-321</p>
                         </div>
                     </div>
-                </div>
-    
-                <div class="contactForm">
-                    <form>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Full Name</span>
-                        </div>
-    
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Email</span>
-                        </div>
-    
-                        <div class="inputBox">
-                            <textarea required="required"></textarea>
-                            <span>Type your Message..</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="submit" name="" value="send">
-                            
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                  </div>
+      
+                  <div class="contactForm">
+                      <form>
+                          <div class="inputBox">
+                             <div class="inputBox-header">Full Name:</div>
+                              <input type="text" class="inputBox-input"  name="" required="required">
+                          </div>
+      
+                          <div class="inputBox">
+                              <div class="inputBox-header">Email:</div>
+                              <input type="text" class="inputBox-input" name="" required="required">
+                          </div>
+      
+                          <div class="inputBox">
+                            <div class="inputBox-header">Your Message:</div>
+                              <textarea class="inputBox-input"  required="required"></textarea>
+                          </div>
+                          <div class="inputBox inputBox-btn">
+                              <input type="submit" name="" value="send">
+                              
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-color" data-dismiss="modal">Close</button>
+              </div>
+              
             </div>
-     
-		
-	</div> 
+          </div>
+        </div>
+        
+      </div>
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
