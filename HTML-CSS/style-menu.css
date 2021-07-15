@@ -41,7 +41,7 @@ p {
 }
 .container {
   width: 100%;
-  max-width: 122.5rem;
+  max-width: 140.5rem;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
@@ -341,7 +341,7 @@ header {
     transition: initial;
   }
   .nav-item {
-    margin: 0 2.4rem;
+    margin: 0 10px;
     border: none;
   }
   .nav-item:last-child {
@@ -530,7 +530,7 @@ footer {
 }
 .inputBox {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 .inputBox-btn {
   justify-content: center;
@@ -568,7 +568,6 @@ footer {
   letter-spacing: 6px;
 }
 .magintops {
-  margin-top: 6%;
   animation: fadeIn linear 0.3s;
 }
 @keyframes fadeIn {
@@ -616,4 +615,287 @@ form {
   margin-right: 18px;
   padding: 5px 16px;
   font-size: 15px;
+}
+/* Menu */
+
+.title input[type="submit"] {
+  border: none;
+  background: #c59d5f;
+  padding: 5px 18px;
+  border-radius: 19px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.title input[type="submit"]:hover {
+  letter-spacing: 6px;
+}
+.tit-btn {
+  margin-bottom: 100px;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titleText {
+  font-family: var(--secondary-font);
+  font-size: 80px;
+  text-decoration: underline 2px;
+  color: black;
+}
+
+.menu .menu-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.menu .menu-content .menu-content__box-item {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .menu-content .menu-content__box-item .imgBox {
+  position: relative;
+  height: 100%;
+  height: 300px;
+}
+
+.textBox span {
+  font-size: 1.75rem;
+}
+
+.menu .menu-content .menu-content__box-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s;
+}
+.menu .menu-content .menu-content__box-item img:hover {
+  transform: scale(1.1002);
+}
+.menu .menu-content .menu-content__box-item .textBox {
+  padding: 15px 0 5px;
+}
+.menu .menu-content .menu-content__box-item .textBox h3 {
+  font-weight: 400;
+  color: #111;
+}
+
+/* sign */
+
+/* .auth-form {
+  border: solid 1px black;
+} */
+#myModal-sign-up .modal-content {
+  margin-top: 55px;
+  border-radius: 10px;
+}
+#myModal-sign-up .modal-header {
+  border: none;
+  height: 0px;
+}
+#myModal-sign-up .modal-header button {
+  margin-right: -25px;
+  font-size: 37px;
+}
+#myModal-sign-up .modal-body {
+  padding: 8px 28px;
+}
+#myModal-sign-up .ath-form-body {
+  margin-top: 20px;
+}
+#myModal-sign-up .auth-form__header {
+  text-align: center;
+}
+#myModal-sign-up .auth-form__header h3 {
+  font-family: var(--main-font);
+  font-size: 4rem;
+  font-weight: 900;
+}
+#myModal-sign-up .auth-form__header h4 {
+  font-size: 2.2rem;
+  margin-top: -10px;
+}
+#myModal-sign-up .auth-form-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+#myModal-sign-up .auth-form-group i {
+  font-size: 15px;
+  width: 30px;
+  margin: auto;
+}
+#myModal-sign-up .auth-form-group input {
+  font-size: 14px;
+  border: none;
+  flex: 1;
+}
+#myModal-sign-up .auth-form-group input:focus {
+  outline: none;
+}
+#myModal-sign-up .auth-form-group {
+  padding: 10px 10px;
+  border: solid 1px #111;
+  border-radius: 10px;
+}
+#myModal-sign-up .auth-form__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myModal-sign-up .auth-form__control a {
+  text-decoration: none;
+  color: #111;
+}
+#myModal-sign-up .auth-btn {
+  padding: 5px 15px;
+  border: solid 1px #515151;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#myModal-sign-up .auth-btn:hover {
+  background: rgb(15, 15, 15);
+  color: #fff;
+}
+#myModal-sign-up .auth-btn {
+  padding: 7px 16px;
+  font-size: 16px;
+}
+#myModal-sign-up .auth_link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+#myModal-sign-up .auth_link a {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}
+#myModal-sign-up .auth_link a:hover {
+  color: red;
+}
+
+/*modal log-in */
+
+#myModal-log-in .modal-content {
+  margin-top: 55px;
+  border-radius: 10px;
+}
+#myModal-log-in .modal-header {
+  border: none;
+  height: 0px;
+}
+#myModal-log-in .modal-header button {
+  margin-right: -25px;
+  font-size: 37px;
+}
+#myModal-log-in .modal-body {
+  padding: 8px 28px;
+}
+#myModal-log-in .ath-form-body {
+  margin-top: 20px;
+}
+#myModal-log-in .auth-form__header {
+  text-align: center;
+}
+#myModal-log-in .auth-form__header h3 {
+  font-family: var(--main-font);
+  font-size: 4rem;
+  font-weight: 900;
+}
+#myModal-log-in .auth-form__header h4 {
+  font-size: 2.2rem;
+  margin-top: -10px;
+}
+#myModal-log-in .auth-form-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+#myModal-log-in .auth-form-group i {
+  font-size: 15px;
+  width: 30px;
+  margin: auto;
+}
+#myModal-log-in .auth-form-group input {
+  font-size: 14px;
+  border: none;
+  flex: 1;
+}
+#myModal-log-in .auth-form-group input:focus {
+  outline: none;
+}
+#myModal-log-in .auth-form-group {
+  padding: 10px 10px;
+  border: solid 1px #111;
+  border-radius: 10px;
+}
+#myModal-log-in .auth-form__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myModal-log-in .auth-form__control a {
+  text-decoration: none;
+  color: #111;
+}
+#myModal-log-in .auth-btn {
+  padding: 5px 15px;
+  border: solid 1px #515151;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#myModal-log-in .auth-btn:hover {
+  background: rgb(15, 15, 15);
+  color: #fff;
+}
+#myModal-log-in .auth-btn {
+  padding: 7px 16px;
+  font-size: 16px;
+}
+#myModal-log-in .auth_link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+#myModal-log-in .auth_link a {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}
+#myModal-log-in .auth_link a:hover {
+  color: red;
+}
+#myModal-log-in .auth-form__aside--img img {
+  height: 47px;
+  width: 47px;
+  max-width: 100%;
+  object-fit: cover;
+}
+#myModal-log-in .auth-form__aside--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-form__aside--text {
+  text-align: center;
+  font-size: 16px;
+  margin: 14px 0px;
+}
+.img_aside_f {
+  margin-right: 20px;
 }

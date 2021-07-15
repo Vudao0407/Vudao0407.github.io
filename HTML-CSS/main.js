@@ -47,10 +47,14 @@ var btn4 = document.getElementById("btn4");
 var btn5 = document.getElementById("btn5");
 var contact = document.getElementById("contact");
 var off = document.getElementById("contact");
+var viewMore = document.getElementById("menu-hidden");
 
 function showContact() {
   contact.style.display = "block";
 }
 function modalOff() {
   contact.style.display = "none";
+}
+function showMore() {
+  viewMore.style.display = "block";
 }

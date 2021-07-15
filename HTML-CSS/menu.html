@@ -26,10 +26,17 @@
           width: 100%;
           height: 100%;
           border-radius: 20px;
+          transition: 0.5s;
+        }
+        .carousel-inner img:hover {
+          transform: scale(1.1102);
         }
         .container-banner{
             /* min-height: 50px ; */
-            margin: 50px 10%;
+            margin: 50px 3%;
+        }
+         .menu-content__box-item{
+            display: none;
         }
         </style>
 
@@ -62,6 +69,12 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">About Us</a>
                     </li>
+                    <li class="nav-item">
+                      <a type="button" class="nav-link" data-toggle="modal" data-target="#myModal-sign-up">SignUp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a type="button" class="nav-link" data-toggle="modal" data-target="#myModal-log-in">Login</a>
+                </li>
                 </ul>
 
             </nav>
@@ -143,9 +156,287 @@
         </a>
       </div>
       
-      </div>
- 
+    </div>
 
+    <!-- <section id="boxs">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/lazy.gif" data-original="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/lazy.gif" data-original="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div> 
+            <d class="row">    
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div> 
+</d iv>
+
+            <div class="row">   
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg" ></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+              <div class="col-md-4 box">
+                <div class="menu-content__box-item">
+                  <div class="imgBox">
+                      <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                  </div>
+                  <div class="textBox">
+                      <h3>Special Salads</h3>
+                  </div>
+                </div>  
+              </div>  
+          </div>
+        </div>
+    
+    
+        <div class="col-md-12 text-center">
+          <div class="button">
+            <button id="showMore"><span>More</span></button>
+          </div>
+        </div>
+    
+      </section> -->
+     
+     
+     
+     
+    <section class="menu" id="menu">
+          <div class="title">
+              <h2 class="titleText">Our Menu</h2>
+          </div>
+          <div class="menu-content">
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu1.jpg"></a>
+                </div>
+                <div class="textBox">
+                    <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu2.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu3.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu4.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu5.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu6.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-item-1.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-item-2.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-item-3.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-item-4.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-item-5.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-item-6.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-group-1.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-group-2.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+              <div class="menu-content__box-item">
+                <div class="imgBox">
+                    <a href=""><img class="lazy img-fluid" src="./images/menu-group-3.jpg"></a>
+                </div>
+                <div class="textBox">
+                  <span>$25</span>
+                    <h3>Special Salads</h3>
+                </div>
+              </div> 
+            </div>
+          </div>
+    </section>
+    <div class="title tit-btn">
+        <input class="btn" type="submit" name="" value="View More">   
+    </div>
 
 
     <footer>
@@ -202,7 +493,7 @@
               <!-- Modal Header -->
               <div class="modal-header">
                 <h4 class="modal-title">Contact Us</h4>
-                <button type="button" class="close" data-dismiss="modal">×</button>
+                <button type="button" class="close" data-dismiss="modal" style="font-size: 35px;">×</button>
               </div>
               
               <!-- Modal body -->
@@ -270,10 +561,7 @@
               </div>
               </div>
               
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger btn-color" data-dismiss="modal">Close</button>
-              </div>
+              <!-- Modal footer --> 
               
             </div>
           </div>
@@ -282,10 +570,167 @@
       </div>
 
 
+     
+        <!-- The Modal -->
+        <div class="modal fade magintops" id="myModal-sign-up">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="auth-form">
+                    <div class="auth-form-container">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                          </div>
+              
+                        <div class="auth-form__header">
+                          <h3 class="auth-form__heading">ROSA</h3>
+                          <h4 class="auth-form__heading">Sign-up</h4>
+                        </div>
+    
+                        <div class="ath-form-body">
+                            <div class="auth-form-group">
+                                <i class="far fa-envelope"></i>
+                                <input type="text" class="auth-form__input" placeholder="Enter your email">
+                            </div>
+                            <div class="auth-form-group">
+                                <i class="fas fa-phone"></i>
+                                <input type="phone" class="auth-form__input" placeholder="Your number">
+                            </div>
+                            <div class="auth-form-group">
+                                <i class="fas fa-lock"></i>
+                            <input type="password" class="auth-form__input" placeholder="Enter password">
+                          </div>
+                          <div class="auth-form-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" class="auth-form__input" placeholder="Retype password">
+                          </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <p class="auth_policy-text">
+                                <input type="checkbox" style="cursor: pointer;" required>
+                                I totally agree with your policy
+                            </p>
+                        </div>
+    
+                        <div class="auth-form__control">
+                          <a href=""> <div class="auth-btn">Sign-Up</div></a> 
+                        </div>
+    
+                    </div>
+                        <div class="auth_link" >
+                            <span>Did you have a account? </span><a data-toggle="modal" data-dismiss="modal" data-target="#myModal-log-in"> Login</a>
+                        </div>
+                                
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+        <div class="modal fade magintops" id="myModal-log-in">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="auth-form">
+                    <div class="auth-form-container">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                          </div>
+              
+                        <div class="auth-form__header">
+                          <h3 class="auth-form__heading">ROSA</h3>
+                          <h4 class="auth-form__heading">Log-In</h4>
+                        </div>
+    
+                        <div class="ath-form-body">
+                            <div class="auth-form-group">
+                                <i class="far fa-envelope"></i>
+                                <input type="text" class="auth-form__input" placeholder="Enter your email">
+                            </div>
+                            <div class="auth-form-group">
+                                <i class="fas fa-lock"></i>
+                            <input type="password" class="auth-form__input" placeholder="Enter password">
+                          </div>
+
+    
+                        <div class="auth-form__control">
+                          <a href=""> <div class="auth-btn">Login</div></a> 
+                        </div>
+
+                        <div class="auth-form__aside">
+                          <div class="auth-form__aside--text">
+                            <span>Or log-in with</span>
+                          </div>
+                          <div class="auth-form__aside--img">
+                            <div class="img_aside_f"><a href=""><img src="./images/logo-fb.png"   alt=""></a></div>
+                            <div class="img_aside_s"><a href=""><img src="./images/logo-gg.png"   alt=""></a></div>
+          
+                          </div>
+
+                      </div>
+    
+                    </div>
+                        <div class="auth_link" >
+                            <span>You haven't acount?</span><a class="ath-form-btn" data-toggle="modal" data-dismiss="modal" data-target="#myModal-sign-up">Sign-Up</a>
+                        </div>
+                                
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
         <!-- Tabs Script -->
-	
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+        <script>
+          $(".menu-content__box-item").slice(0,3).show()
+        $(".btn").on("click", function(){
+            $(".menu-content__box-item:hidden").slice(0, 6).slideDown()
+            if ($(".menu-content__box-item:hidden").length == 0) {
+                $(".btn").fadeOut('slow')
+            }
+        })
+        </script>
 
 </body>
 </html>

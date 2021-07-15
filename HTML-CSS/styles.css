@@ -41,7 +41,7 @@ p {
 }
 .container {
   width: 100%;
-  max-width: 122.5rem;
+  max-width: 140.5rem;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
@@ -137,7 +137,7 @@ header {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("/images/hero.jpg") center no-repeat;
+  background: url("./images/hero.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -328,7 +328,7 @@ header {
   margin-bottom: 0;
 }
 .perfect-blend {
-  background: url("/images/perfect-blend.jpg") center no-repeat;
+  background: url("./images/perfect-blend.jpg") center no-repeat;
   background-size: cover;
 }
 /* footer */
@@ -440,7 +440,7 @@ footer {
     transition: initial;
   }
   .nav-item {
-    margin: 0 2.4rem;
+    margin: 0 10px;
     border: none;
   }
   .nav-item:last-child {
@@ -583,129 +583,6 @@ footer {
     transform: translateY(-1rem);
   }
 }
-
-/* .contact {
-  position: relative;
-  min-height: 100vh;
-  padding: 50px 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px;
-  padding: 64px 0 30px;
-  border-spacing: 70px;
-  box-shadow: 6px 6px 26px #b8b8b8, -6px -6px 26px #ffffff;
-  /* display: none; */
-/* animation: fadeIn linear 0.5s; */
-/* animation: growth linear 0.2; */
-/* }
-.contact .content {
-  max-width: 800px;
-  text-align: center;
-}
-.contact .content h2 {
-  font-size: 36px;
-  font-weight: 500;
-}
-.contact-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: growth linear 0.2;
-}
-.contact-container .contactInfo {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.contact-container .contactInfo .box {
-  position: relative;
-  padding: 20px 0;
-  display: flex;
-}
-.contact-container .contactInfo .box .icon {
-  min-width: 60px;
-  height: 60px;
-  background: var(--secondary-font-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  font-size: 22px;
-  color: #fff;
-}
-.contact-container .contactInfo .box .text {
-  display: flex;
-  margin-left: 20px;
-  font-size: 16px;
-  color: #111;
-  flex-direction: column;
-  font-weight: 300;
-}
-.contact-container .contactInfo .box .text h3 {
-  font-weight: 500;
-  color: var(--secondary-font-color);
-}
-.contactForm {
-  width: 40%;
-  padding: 40px;
-}
-.contactForm .inputBox {
-  position: relative;
-  width: 100%;
-  margin-top: 10px;
-}
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid #333;
-  outline: none;
-  resize: none;
-}
-.contactForm .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  pointer-events: none;
-  transition: 0.5s;
-  color: #666;
-}
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-  color: var(--secondary-font-color);
-  font-size: 12px;
-  transform: translateY(-20px);
-}
-
-.contactForm .inputBox input[type="submit"] {
-  position: relative;
-  width: 100px;
-  background: var(--secondary-font-color);
-  color: #fff;
-  border-radius: 19px;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  transition: 0.5s;
-}
-.contactForm .inputBox input[type="submit"]:hover {
-  letter-spacing: 6px;
-} */
-
 /* Modal */
 .box-item {
   display: flex;
@@ -726,7 +603,7 @@ footer {
 }
 .inputBox {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 .inputBox-btn {
   justify-content: center;
@@ -760,7 +637,6 @@ footer {
   letter-spacing: 6px;
 }
 .magintops {
-  margin-top: 6%;
   animation: fadeIn linear 0.3s;
 }
 @keyframes fadeIn {
@@ -808,4 +684,116 @@ form {
   margin-right: 18px;
   padding: 5px 16px;
   font-size: 15px;
+}
+
+/* MOdal sign-up */
+#myModal-sign-up .modal-content {
+  margin-top: 55px;
+  border-radius: 10px;
+}
+#myModal-sign-up .modal-header {
+  border: none;
+  height: 0px;
+}
+#myModal-sign-up .modal-header button {
+  margin-right: -25px;
+  font-size: 37px;
+}
+#myModal-sign-up .modal-body {
+  padding: 8px 28px;
+}
+#myModal-sign-up .ath-form-body {
+  margin-top: 20px;
+}
+#myModal-sign-up .auth-form__header {
+  text-align: center;
+}
+#myModal-sign-up .auth-form__header h3 {
+  font-family: var(--main-font);
+  font-size: 4rem;
+  font-weight: 900;
+}
+#myModal-sign-up .auth-form__header h4 {
+  font-size: 2.2rem;
+  margin-top: -10px;
+}
+#myModal-sign-up .auth-form-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+#myModal-sign-up .auth-form-group i {
+  font-size: 15px;
+  width: 30px;
+  margin: auto;
+}
+#myModal-sign-up .auth-form-group input {
+  font-size: 14px;
+  border: none;
+  flex: 1;
+}
+#myModal-sign-up .auth-form-group input:focus {
+  outline: none;
+}
+#myModal-sign-up .auth-form-group {
+  padding: 10px 10px;
+  border: solid 1px #111;
+  border-radius: 10px;
+}
+#myModal-sign-up .auth-form__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myModal-sign-up .auth-form__control a {
+  text-decoration: none;
+  color: #111;
+}
+#myModal-sign-up .auth-btn {
+  padding: 5px 15px;
+  border: solid 1px #515151;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#myModal-sign-up .auth-btn:hover {
+  background: rgb(15, 15, 15);
+  color: #fff;
+}
+#myModal-sign-up .auth-btn {
+  padding: 7px 16px;
+  font-size: 16px;
+}
+#myModal-sign-up .auth_link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+#myModal-sign-up .auth_link a {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}
+#myModal-sign-up .auth_link a:hover {
+  color: red;
+}
+
+#myModal-log-in .auth-form__aside--img img {
+  height: 47px;
+  width: 47px;
+  max-width: 100%;
+  object-fit: cover;
+}
+#myModal-log-in .auth-form__aside--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-form__aside--text {
+  text-align: center;
+  font-size: 16px;
+  margin: 14px 0px;
+}
+.img_aside_f {
+  margin-right: 20px;
 }
