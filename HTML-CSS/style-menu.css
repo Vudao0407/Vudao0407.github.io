@@ -536,12 +536,13 @@ footer {
   justify-content: center;
 }
 .inputBox-input {
+  border-radius: 5px;
   width: 100%;
 }
 .inputBox-header {
   min-width: 130px;
-  color: #ff0157;
-  font-size: 15px;
+  /* color: #ff0157; */
+  font-size: 18px;
 }
 .inputBox-header h4 {
   margin-left: 16px;
@@ -555,11 +556,13 @@ footer {
   margin-top: 25px;
 }
 .contactForm .inputBox input[type="submit"] {
-  border: none;
-  background: #ff0157;
+  background-color: transparent;
+
+  /* border: none;
+  background: #ff0157; */
   padding: 5px 18px;
   border-radius: 19px;
-  color: #fff;
+  color: black;
   font-size: 1.5rem;
   text-transform: uppercase;
   transition: 0.5s;
@@ -569,6 +572,9 @@ footer {
 }
 .magintops {
   animation: fadeIn linear 0.3s;
+}
+.ngu {
+  margin-top: 50px;
 }
 @keyframes fadeIn {
   from {
@@ -589,9 +595,9 @@ footer {
 .modal-dialog-containner {
   animation: growth linear 0.3s;
 }
-.btn-color {
+/* .btn-color {
   background: #ff0157;
-}
+} */
 .modal-body {
   padding: 25px;
 }
@@ -601,12 +607,12 @@ form {
 .icon {
   max-width: 25px;
   height: 25px;
-  background: #ff0157;
+  /* background: #ff0157; */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #fff;
+  /* color: #fff; */
 }
 .icon i {
   font-size: 20px;
@@ -898,4 +904,8 @@ form {
 }
 .img_aside_f {
   margin-right: 20px;
+}
+header {
+  position: fixed;
+  background-color: rgba(59, 49, 49, 0.08);
 }

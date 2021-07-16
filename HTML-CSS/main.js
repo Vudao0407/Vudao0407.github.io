@@ -37,14 +37,6 @@ sr.reveal(".animate-bottom", {
   delay: 600,
 });
 
-var breakfast = document.getElementById("breakfast");
-var lunch = document.getElementById("lunch");
-var snacks = document.getElementById("snacks");
-var dinner = document.getElementById("dinner");
-var btn2 = document.getElementById("btn2");
-var btn3 = document.getElementById("btn3");
-var btn4 = document.getElementById("btn4");
-var btn5 = document.getElementById("btn5");
 var contact = document.getElementById("contact");
 var off = document.getElementById("contact");
 var viewMore = document.getElementById("menu-hidden");

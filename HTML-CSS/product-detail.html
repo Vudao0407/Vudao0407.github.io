@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!--Font awesome CDN-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+      <!--Scroll reveal CDN-->
+      <link rel="stylesheet" href="./product-detail.css">
+    <title>Document</title>
+
+</head>
+<body class="open">
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="./images/logo-rosa.png" alt="">
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="cursor: pointer;" class="nav-link" data-toggle="modal" data-target="#myModal">
+                        Contact
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product-detail.html" class="nav-link">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product-detail.html" class="nav-link">Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="cursor: pointer;" class="nav-link" data-toggle="modal" data-target="#myModal-sign-up">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="cursor: pointer;" class="nav-link" data-toggle="modal" data-target="#myModal-log-in">Login</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="sub-headline">
+                <span class="first-letter">D</span>etail
+            </h2>
+            <h1 class="headline" style="color: aliceblue;">The Rosa</h1>
+            <div class="headline-description">
+                <div class="single-animation">
+                    <a href="#detail" class="btn cta-btn">Take A Look</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="detail" style="height: 70px;">
+
+    </div>
+
+    <div class="product-bar" id="">
+        <h3 class="headline">Details</h3>
+    </div>
+
+
+      <div class = "product" id="so-img">
+        <!-- <div class = "img_container" id="show-image">
+            <div class="img">
+                <img src="./images/Mon-an-2.jpg" alt="" id="productImg">
+            </div>
+        </div>
+        <div class = "info_container  animate-right">
+            <div class = "product_name animate-left">Rosa Restaurant</div>
+            <div class = "product_price">Name: Special Soup</div>
+            <div class = "color">Price:$20</div>
+            <div class = "color_list">
+               <div class="color_list-text"> Product detail: </div>
+                <div class="color_list-p">
+                    Fried chicken is almost impossible to become familiar with in a busy life.
+                    It is often the main dish at fast food restaurants and is also something that not only
+                     adults but also children love. The chicken pieces will be coated with a layer of flour,
+                      then fried. When you eat, you will see the crispness of the fried dough and the tenderness 
+                      of the chicken. The delicious taste with a little French fries or salad will give you a great meal.
+                   I really love this dish.
+                </div> 
+            </div>
+            <div class="add_cart_btn">  
+                <a href=""><div class = "add_cart" id="add-to-cart">Order</div></a>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+
+
+
+<footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animte-top">
+                    <h4>About Rosa</h4>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4>Follow along</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="your email address...">
+                            <button class="newsletter-btn" type="submit">
+                            </button>
+                        </form>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="container mt-3">      
+        <!-- The Modal -->
+        <div class="modal fade magintops" id="myModal">
+          <div class="modal-dialog modal-dialog-containner ">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Contact Us</h4>
+                <button type="button" class="close" data-dismiss="modal" style="font-size: 35px;">×</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="contact-container">
+                  <div class="contactInfo">
+                    <div class="box-item">
+                      <div class="box">
+                          <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                          <div class="text">
+                              <h5>Location:</h5>
+                              <p>12A,Viwaseen</p>
+                          </div>
+                      </div>
+                      <div class="box">
+                          <div class="icon">
+                              <i class="fa fa-clock" aria-hidden="true"></i>
+                          </div>
+                          <div class="text">
+                              <h5>Open:</h5>
+                              <p>Sun-Fri: 11:00AM-23:00PM</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="box-item box-item--left" >
+                      <div class="box box--right">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h5>Email:</h5>
+                            <p>info@gmail.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h5>Call:</h5>
+                            <p>+84999999999</p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+      
+                  <div class="contactForm">
+                      <form>
+                          <div class="inputBox">
+                             <div class="inputBox-header">Full Name:</div>
+                              <input type="text" class="inputBox-input"  name="" required="required">
+                          </div>
+      
+                          <div class="inputBox">
+                              <div class="inputBox-header">Email:</div>
+                              <input type="text" class="inputBox-input" name="" required="required">
+                          </div>
+      
+                          <div class="inputBox">
+                            <div class="inputBox-header">Your Message:</div>
+                              <textarea class="inputBox-input"  required="required"></textarea>
+                          </div>
+                          <div class="inputBox inputBox-btn">
+                              <input type="submit" name="" value="send">
+                              
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              </div>
+              
+              <!-- Modal footer -->
+    
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    
+    
+      <div class="modal fade" id="myModal-sign-up">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="auth-form">
+                  <div class="auth-form-container">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+            
+                      <div class="auth-form__header">
+                        <h3 class="auth-form__heading">ROSA</h3>
+                        <h4 class="auth-form__heading">Sign-up</h4>
+                      </div>
+    
+                      <div class="ath-form-body">
+                          <div class="auth-form-group">
+                              <i class="far fa-envelope"></i>
+                              <input type="text" class="auth-form__input" placeholder="Enter your email">
+                          </div>
+                          <div class="auth-form-group">
+                              <i class="fas fa-phone"></i>
+                              <input type="phone" class="auth-form__input" placeholder="Your number">
+                          </div>
+                          <div class="auth-form-group">
+                              <i class="fas fa-lock"></i>
+                          <input type="password" class="auth-form__input" placeholder="Enter password">
+                        </div>
+                        <div class="auth-form-group">
+                          <i class="fas fa-lock"></i>
+                          <input type="password" class="auth-form__input" placeholder="Retype password">
+                        </div>
+                      </div>
+    
+                      <div class="auth-form__aside">
+                          <p class="auth_policy-text">
+                              <input type="checkbox" style="cursor: pointer;" required>
+                              I totally agree with your policy
+                          </p>
+                      </div>
+    
+                      <div class="auth-form__control">
+                        <a href="#"> <div class="auth-btn">Sign-Up</div></a> 
+                      </div>
+    
+                  </div>
+                      <div class="auth_link" >
+                        <span>Did you have a account? </span><a data-toggle="modal" data-dismiss="modal" data-target="#myModal-log-in"> Login</a>
+                      </div>
+                              
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+      <div class="modal fade magintops" id="myModal-log-in">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="auth-form">
+                  <div class="auth-form-container">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+            
+                      <div class="auth-form__header">
+                        <h3 class="auth-form__heading">ROSA</h3>
+                        <h4 class="auth-form__heading">Log-In</h4>
+                      </div>
+    
+                      <div class="ath-form-body">
+                          <div class="auth-form-group">
+                              <i class="far fa-envelope"></i>
+                              <input type="text" class="auth-form__input" placeholder="Enter your email">
+                          </div>
+                          <div class="auth-form-group">
+                              <i class="fas fa-lock"></i>
+                          <input type="password" class="auth-form__input" placeholder="Enter password">
+                        </div>
+    
+    
+                      <div class="auth-form__control">
+                        <a href="#"> <div class="auth-btn">Login</div></a> 
+                      </div>
+    
+                      <div class="auth-form__aside">
+                        <div class="auth-form__aside--text">
+                          <span>Or log-in with</span>
+                        </div>
+                        <div class="auth-form__aside--img">
+                          <div class="img_aside_f"><a href="#"><img src="./images/logo-fb.png"   alt=""></a></div>
+                          <div class="img_aside_s"><a href="#"><img src="./images/logo-gg.png"   alt=""></a></div>
+        
+                        </div>
+    
+                    </div>
+    
+                  </div>
+                      <div class="auth_link" >
+                          <span>You haven't acount?</span><a class="ath-form-btn" data-toggle="modal" data-dismiss="modal" data-target="#myModal-sign-up">Sign-Up</a>
+                      </div>
+                              
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./product-detail.js"></script>
+
+</body>
+</html>
