@@ -266,6 +266,17 @@ header {
   margin-right: -0.5rem;
   animation: scale 0.5s forwards;
 }
+
+.headline-oder {
+  color: black;
+  font-size: 3.7rem;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+}
+
 .separator {
   display: flex;
   align-items: center;

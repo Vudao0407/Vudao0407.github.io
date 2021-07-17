@@ -30,7 +30,7 @@ result.forEach((item) => {
       <img src="${item.img}" alt="">
       <div class="td-info">
           <p>${item.name}</p>
-          <span style="font-size: 20px;">${item.price}</span><br>
+          <span style="font-size: 20px;"><span>$</span>${item.price}</span><br>
           <a href="">Remove</a>
       </div>
 
@@ -39,7 +39,7 @@ result.forEach((item) => {
   <td class="tb-ngu" style="font-size: 20px;">${
     obj[`${item.id}`] ? obj[`${item.id}`] : 1
   }</td>
-  <td style="font-size: 20px;"> ${
+  <td style="font-size: 20px;"><span>$</span> ${
     obj[`${item.id}`] ? obj[`${item.id}`] * item.price : item.price
   }</td>
 </tr>

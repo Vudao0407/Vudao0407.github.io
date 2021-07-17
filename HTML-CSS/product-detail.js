@@ -21,10 +21,10 @@ showImage.append(`
     <img src="${item.img}" alt="" id="productImg">
 </div>
 </div>
-        <div class = "info_container  animate-right">
+        <div class = "info_container animate-right">
         <div class = "product_name animate-left">Rosa Restaurant</div>
         <div class = "product_price">Name: ${item.name}</div>
-        <div class = "color">Price:${item.price}</div>
+        <div class = "color">Price:<span>$</span>${item.price}</div>
         <div class = "color_list">
         <div class="color_list-text"> Product detail: </div>
             <div class="color_list-p">
