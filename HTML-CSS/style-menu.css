@@ -697,10 +697,10 @@ form {
   padding: 15px 0 5px;
 }
 .menu .menu-content .menu-content__box-item .textBox h3 {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   font-size: 30px;
-  font-family: var(--secondary-font);
-  font-weight: 600;
+  /* font-family: var(--secondary-font); */
+  font-weight: 500;
   color: #111;
 }
 

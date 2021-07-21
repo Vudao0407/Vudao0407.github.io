@@ -50,3 +50,10 @@ function modalOff() {
 function showMore() {
   viewMore.style.display = "block";
 }
+
+$(document).ready(function () {
+  $("ul li a").click(function () {
+    $("li a").removeClass("active");
+    $(this).addClass("active");
+  });
+});

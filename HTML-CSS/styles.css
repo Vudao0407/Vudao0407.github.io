@@ -138,6 +138,7 @@ header {
   opacity: 0;
   animation: fadeUp 0.5s forwards;
   animation-delay: 0.5s;
+  margin-bottom: 22px;
 }
 .first-letter {
   text-transform: uppercase;
@@ -446,8 +447,14 @@ footer {
     left: 0;
     bottom: -3px;
   }
+  /* .active::before {
+    display: none;
+  } */
   .sub-headline {
     font-size: 10rem;
+  }
+  .sub-headline {
+    margin-bottom: 22px;
   }
   .first-letter {
     font-size: 12.2rem;

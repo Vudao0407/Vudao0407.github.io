@@ -1,5 +1,7 @@
 let showImage = $("#so-img");
 
+// const mes = () => console.alert("choose");
+
 let detailData = () => {
   let data = localStorage.getItem("data-product-detail")
     ? JSON.parse(localStorage.getItem("data-product-detail"))
